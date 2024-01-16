@@ -12,7 +12,6 @@ const SplashScreen = () => {
 
     return () => clearTimeout(timeout);
   }, [navigation]);
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.imageContainer}>
