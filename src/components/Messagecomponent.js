@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import { moderateScale, scale, verticalScale } from "react-native-size-matters";
 
 export default function Messagecomponent({ currentUser, item }) {
   const currentUserStatus = item.currentUser !== currentUser;
@@ -34,7 +35,7 @@ export default function Messagecomponent({ currentUser, item }) {
 const styles = StyleSheet.create({
   messageItemWrapper: {
     maxWidth: "50%",
-    marginBottom: 15,
+    marginBottom:verticalScale(10),
   },
   messageItemInnerWrapper: {
     flexDirection: "row",
@@ -43,8 +44,8 @@ const styles = StyleSheet.create({
   messageItem: {
     width: "100%",
     backgroundColor: "#ffffff",
-    padding: 20,
-    borderRadius: 10,
+    padding:moderateScale(10),
+    borderRadius:scale(10),
     marginBottom: 2,
   },
   messageTime : {
